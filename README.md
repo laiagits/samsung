@@ -3,7 +3,7 @@ The data linked used represent data collected from the accelerometers from the S
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-The repository assumes the data has already been downloaded to a directory. This can be found here.
+The repository assumes the data has already been downloaded to a directory ./UCI HAR Dataset and unzipped. The source ZIP file can be found here.
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 The R script does the following:

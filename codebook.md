@@ -27,7 +27,7 @@ run_analysis.R will clean and prepare the data as follows:
 * gets all the values from X sets where columns represent a mean or a standard deviation. For this the script uses the features file which contains descriptions for all columns 
 * the measurements variable holds only the required measurements 
 * in order to change labelling to a descriptive name, instead of using codes, the file activities is used to replace the values in Y with the relevant codes.
-* Finnally ddaply will run the colMeans function for each combination of subject and activity found
+* Finnally ddaply will run the colMeans function for each combination of subject and activity found 
 
 
 
