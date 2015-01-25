@@ -1,3 +1,5 @@
+### Readme.md
+
 This repository contains R code required to collect and clean a data set collected from wearable computing devices.
 The data linked used represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
 
