@@ -1,25 +1,21 @@
-### Description
-The script run-analysis.R:
+### run_analysis.R - Data 
 
-* Reads all the data required for execution located in the running directory within a subdirectory named ./UCI HAR Dataset/
-* Merges the training and the test sets to create one data set.
-* Extracts only the measurements on the mean and standard deviation for each measurement. 
-* Uses descriptive activity names to name the activities in the data set
-* Appropriately labels the data set with descriptive variable names. 
-*From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
-### The Data
-A description of the data can be found here http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-
-- 'features_info.txt': Shows information about the variables used on the feature vector.
-- 'features.txt': List of all features.
-- 'activity_labels.txt': Links the class labels with their activity name.
-- 'train/X_train.txt': Training set.
-- 'train/y_train.txt': Training labels.
-- 'test/X_test.txt': Test set.
-- 'test/y_test.txt': Test labels.
+The script uses data available puclicly and performs some modifications explained below.
+A description of the original data can be found here http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 Data can be downloaded folloing this link http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip
+
+The original data contains 10299 observations in total for test and train data of 30 invididual subjects whilst perfoming different activities. 
+
+These are the main changes and hence differences between the original data set and the one produced after unning this script:
+
+*Train and test data is combines into one data set as rows and hence totalling 10299 observations
+* The original file contains 561 measurements for both training and test data. By using the description file features.txt, we can identify those measurements that relate to mean and standard deviations and select only those variables from the data. We reduce the initial 561 variables to 66.
+*Activities are encided with numbers which makes difficult to understand what the subject was doing when the measurement was taken. The script will use the activities file to replace those codes with a textual description.
+*The script calculates the mean of all the measurements for each subject given a specific activity, giving a total number of 180 combinations. 
+*The final file includes hence an observation for each subject on each different type of activity each observation being the average of measures taken by the device as mean or standar deviation
+
+
 
 ###Process
 run_analysis.R will clean and prepare the data as follows:

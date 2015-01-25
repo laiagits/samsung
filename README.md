@@ -9,6 +9,8 @@ The repository assumes the data has already been downloaded to a directory ./UCI
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 The R script does the following:
+
+* Reads all the data required for execution located in the running directory within a subdirectory named ./UCI HAR Dataset/
 * Merges the training and the test sets to create one data set.
 * Extracts only the measurements on the mean and standard deviation for each measurement. 
 * Uses descriptive activity names to name the activities in the data set
