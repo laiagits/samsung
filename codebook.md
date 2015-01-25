@@ -16,7 +16,6 @@ These are the main changes and hence differences between the original data set a
 * The final file includes hence an observation for each subject on each different type of activity each observation being the average of measures taken by the device as mean or standar deviation
 
 
-
 ###Process
 run_analysis.R will clean and prepare the data as follows:
 * combines all the training and test datasets into 3 data frames
