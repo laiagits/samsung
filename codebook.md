@@ -9,11 +9,11 @@ The original data contains 10299 observations in total for test and train data o
 
 These are the main changes and hence differences between the original data set and the one produced after unning this script:
 
-*Train and test data is combines into one data set as rows and hence totalling 10299 observations
-*The original file contains 561 measurements for both training and test data. By using the description file features.txt, we can identify those measurements that relate to mean and standard deviations and select only those variables from the data. We reduce the initial 561 variables to 66.
-*Activities are encided with numbers which makes difficult to understand what the subject was doing when the measurement was taken. The script will use the activities file to replace those codes with a textual description.
-*The script calculates the mean of all the measurements for each subject given a specific activity, giving a total number of 180 combinations. 
-*The final file includes hence an observation for each subject on each different type of activity each observation being the average of measures taken by the device as mean or standar deviation
+* Train and test data is combines into one data set as rows and hence totalling 10299 observations
+* The original file contains 561 measurements for both training and test data. By using the description file features.txt, we can identify those measurements that relate to mean and standard deviations and select only those variables from the data. We reduce the initial 561 variables to 66.
+* Activities are encided with numbers which makes difficult to understand what the subject was doing when the measurement was taken. The script will use the activities file to replace those codes with a textual description.
+* The script calculates the mean of all the measurements for each subject given a specific activity, giving a total number of 180 combinations. 
+* The final file includes hence an observation for each subject on each different type of activity each observation being the average of measures taken by the device as mean or standar deviation
 
 
 
